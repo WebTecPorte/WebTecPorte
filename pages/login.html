@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/accessPattern.css">
+    <style>
+        .ex-1 {
+            margin-bottom: 0;
+        }
+        
+        .lnk_esqueceu_senha{
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="titles">LOGIN</h1>
+        <hr>
+        <br>
+        <form class="forms_login">
+            <label for="email">E-mail</label>
+            <div class="input_data">
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </div>
+            <label for="loginPass">Senha</label>
+            <div class="input_data ex-1">
+                <input type="password" name="loginPass" id="loginPass" required>
+            </div>
+            <a href="redefinirSenha.html" class="lnk lnk_esqueceu_senha">Esqueceu a senha?</a>
+            <button class="btn btn_entrar">Entrar</button>
+            <a href="cadastro.html" class="lnk lnk_sem_conta">Ainda não tem uma conta? Cadastre-se</a> 
+        </form>
+    </main>
+    <script type="module" src="../script/manageAcounts.js"></script>
+</body>
+</html>
